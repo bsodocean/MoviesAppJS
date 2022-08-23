@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+$color-red: #ff0000;
+$color-black: #150e0d;
+$color-white: #FFFFFF;
+
+
+
+@mixin centerElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+    body {
+        background-color: $color-black;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+       #search-bar {
+        background-color: $color-black;
+        width: 15vw;
+        height: 3.5vh;
+        border-radius: 20px;
+        border-style: none;
+        outline: none;
+        padding: 1rem;
+        color: $color-white;
+        font-size: 1rem;
+      }
+      background: linear-gradient(180deg, rgba(21,14,13,1) 0%, rgba(255,0,0,0.3) 100%);
+      padding: 1.5rem;
+    }
+
+    #search-bar::placeholder {
+      background-color: $color-white;
+      font-size: 1rem;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .movie-data-container {
+      width: 300px;
+      margin: 1rem;
+      background-color: $color-white;
+      .poster-img {
+        width: 100%;
+      }
+      .movie-info {
+        color: $color-black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem 1rem;
+        letter-spacing: 0.5px;
+      }
+      border-radius: 3px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overview-hover-container {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $color-white;
+      padding: 1rem;
+      max-height: 100%;
+      transform:translateY(101%);
+      transition:transform 0.3s ease-in;
+    }
+
+    .movie-data-container:hover .overview-hover-container {
+      transform:translateY(0%);
+      transition:transform 0.3s ease-in;
+      }
+
+      .movies-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 3rem; 
+      }
+
+      .green {
+        color: $color-red;
+      }
+
+      .orange {
+        color: #FFA500;
+      }
+    

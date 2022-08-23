@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #150e0d;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#150e0d), to(rgba(255, 0, 0, 0.3)));
+  background: linear-gradient(180deg, #150e0d 0%, rgba(255, 0, 0, 0.3) 100%);
+  padding: 1.5rem;
+}
+
+header #search-bar {
+  background-color: #150e0d;
+  width: 15vw;
+  height: 3.5vh;
+  border-radius: 20px;
+  border-style: none;
+  outline: none;
+  padding: 1rem;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+#search-bar::-webkit-input-placeholder {
+  background-color: #FFFFFF;
+  font-size: 1rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#search-bar:-ms-input-placeholder {
+  background-color: #FFFFFF;
+  font-size: 1rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#search-bar::-ms-input-placeholder {
+  background-color: #FFFFFF;
+  font-size: 1rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#search-bar::placeholder {
+  background-color: #FFFFFF;
+  font-size: 1rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.movie-data-container {
+  width: 300px;
+  margin: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-data-container .poster-img {
+  width: 100%;
+}
+
+.movie-data-container .movie-info {
+  color: #150e0d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.overview-hover-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.movie-data-container:hover .overview-hover-container {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.movies-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem;
+}
+
+.green {
+  color: #ff0000;
+}
+
+.orange {
+  color: #FFA500;
+}
+/*# sourceMappingURL=moviestyle.css.map */
